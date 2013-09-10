@@ -62,6 +62,7 @@
 	$("#mode_selector").on("click", "button", function () {
 		$("#back").show();
 		window.mode = $(this).data("mode");
+		window.points = $(this).data("points");
 		repwho.go(mode);
 		$("#mode_selector").hide();
 		$("#rep_quiz").show();
