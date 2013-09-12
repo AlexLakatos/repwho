@@ -14,7 +14,7 @@
 				function (error) {
 					console.log(error);
 				}
-			)
+			);
 		} else repwho.repeat();
 	};
 
@@ -57,7 +57,7 @@
 		repwho.pick();
 		repwho.pushDOM();
 		$("#rep_names button").shuffle();
-	}
+	};
 
 	$("#mode_selector").on("click", "button", function () {
 		$("#back").show();
@@ -131,4 +131,18 @@
   // get a reference to the button and call install() on click
   var button = document.getElementById('install');
   button.addEventListener('click', install, false);
+})();
+
+(function handleScoring() {
+  if (localStorage) {
+
+  } else {
+    $("#messages").html(
+      '<section role="status"><p>Your device does not support score keeping.</p></section>'
+    ).show();
+    function hideMessage() {
+      $("#messages").hide();
+    }
+    window.setTimeout(hideMessage, 3000);
+  }
 })();

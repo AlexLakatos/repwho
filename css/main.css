@@ -79,3 +79,6 @@ button {
     font-weight: bold;
     background: url("../shared/style/status/images/ui/pattern.png") repeat scroll left top #404040;
 }
+#messages {
+  display:none;
+}
